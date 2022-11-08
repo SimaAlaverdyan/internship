@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main {
+            padding: 20px;
+            width: 15%;
+            border: 1px solid;
+        }
+        select {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+        /*.label {*/
+        /*    margin-bottom: 20px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form name="form" action="action.php" method="post">
+            <input name="length" placeholder="Length"> <br>
+            <label name="label">The row must include</label>
+            <select name="options">
+                <option value="digits" selected>Digits</option>
+                <option value="characters">Characters</option>
+                <option value="both">Digits and Characters</option>
+            </select>
+            <br>
+            <input type="submit" name="btn" value="Generate"></input>
+        </form>
+    </div>
+</body>
+</html>
+
